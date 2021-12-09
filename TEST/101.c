@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int x;
+int x,y;
 int visited[1];
 //int x=0;
 void gen_arr1(int* num_arr, int size,int x){
@@ -41,6 +41,8 @@ void gen_arr2(int* num_arr, int size, int x){
             else{
                     if(x==size-1){
                         int i;
+                        y++;
+                        printf("%d: ",y);
                         for(i=0;i<size;i++)
                             printf(" %d ",num_arr[i]);
                         printf("\n");
@@ -58,5 +60,6 @@ int main(){
     scanf("%d",&n);
     int num_arr[n];
     int size=sizeof(num_arr)/sizeof(int);
+    gen_arr2(num_arr,size,0);
     gen_arr1(num_arr,size,0);
 }

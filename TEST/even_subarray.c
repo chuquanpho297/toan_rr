@@ -32,12 +32,12 @@ void input_arr(int* num_arr, int size){
 }
 int main(){
     int n;
-    printf("The number of index:");
+    printf("The number of indices:");
     scanf("%d",&n);
     int num_arr[n];
     int size=sizeof(num_arr)/sizeof(int);
     input_arr(num_arr,size);
     even_find(num_arr,size);
-    printf("The num of even sub_array: %d ",count);
+    printf("The num of even sub_arrays: %d ",count);
     printf("\n");
 }
